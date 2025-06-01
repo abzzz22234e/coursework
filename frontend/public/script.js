@@ -260,3 +260,14 @@ window.addEventListener('load', function() {
         document.body.style.opacity = '1';
     }, 100);
 });
+
+// Secret access function
+function secretAccess() {
+    const userInput = prompt("🔥 Enter the secret code to access the roast zone (Hint: Think of Abubakar's favorite number):").toLowerCase();
+    
+    if (userInput === "42" || userInput === "abubakar" || userInput === "roast" || userInput === "fire") {
+        window.location.href = "secret-roast.html";
+    } else {
+        alert("🚫 Access denied! Nice try though 😏");
+    }
+}
